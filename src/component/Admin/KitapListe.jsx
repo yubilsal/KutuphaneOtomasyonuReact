@@ -53,15 +53,16 @@ class ListUserComponent extends Component {
     render() {
         return (
             <div>
-                <h2 className="text-left">Kitap Listesi</h2>
-                <button className="btn btn-danger" style={{width:'200px'}} onClick={() => this.addKitap()}> Kitap Ekle</button>
+                <h2 className="text-center">Kitaplar</h2>
+                <button className="btn btn-danger" style={{width:'250px'}} onClick={() => this.addKitap()}> Kitap Ekle</button>
+                <br />
                 <table className="table table-striped">
                     <thead>
                         <tr>
                             <th className="hidden">Id</th>
-                            <th>kitapAdi</th>
-                            <th>yazarAdi</th>
-                            <th>isbn</th>
+                            <th>Kitap Adı</th>
+                            <th>Yazar Adı</th>
+                            <th>ISBN</th>
 
                         </tr>
                     </thead>

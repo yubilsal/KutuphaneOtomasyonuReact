@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { useCallback } from 'react';
 
 const USER_API_BASE_URL = 'http://localhost:8080';
 
@@ -55,6 +56,12 @@ class ApiService {
     }
     orderList() {
       return axios.get(USER_API_BASE_URL + "/orders");
+    }
+    orderByKullaniciId(kullanici_id){
+      return axios.get(USER_API_BASE_URL + "/kullanici/" + "2" + "/orders")
+    }
+    orderByKitapId(kitap_id){
+      return axios.get(USER_API_BASE_URL + "/kitap/" + kitap_id + "/orders")
     }
     deleteOrder(orderId) {
       return axios.delete(USER_API_BASE_URL + '/orders/' + orderId);

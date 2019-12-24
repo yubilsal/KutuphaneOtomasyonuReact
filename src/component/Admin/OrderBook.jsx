@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ApiService from "../../service/ApiService";
-import Example from "../navbar/Example";
+import Example from "../navbar/NavBar";
 import { Button,Label,FormGroup,Input } from 'reactstrap';
 
 class OrderBook extends Component{
@@ -27,7 +27,6 @@ kitapyükle() {
   ApiService.kitapById(window.localStorage.getItem("kitap id"))
       .then((res) => {
           let kitap = res.data;
-          console.log(res.data)
           this.setState({
           id: kitap.id,
           kitapAdi: kitap.kitapAdi,

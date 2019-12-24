@@ -20,25 +20,11 @@ const Example = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar color="light" light expand = 'md' >
         <NavbarBrand href="/" >Admin Panel</NavbarBrand>
-        
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/users" activeClassName="selectedLink" style={style}> Kitap Listesi</NavLink>
-            </NavItem>
-            
-            <NavItem>
-              <NavLink href="/kullanici-list" style={style} > Kullanıcı Listesi</NavLink>
-            </NavItem>
-
-            <NavItem>
-              <NavLink href="/order-list" style={style} > Kiralanmış Kitaplar</NavLink>
-            </NavItem>
-
-          </Nav>
-        </Collapse>
+        <NavbarBrand href="/users" >Kitap Listesi</NavbarBrand>
+        <NavbarBrand href="/kullanici-list" >Kullanıcı Listesi</NavbarBrand>
+        <NavbarBrand href="/order-list" >Kiralanmış Kitaplar</NavbarBrand>
       </Navbar>
     </div>
   );

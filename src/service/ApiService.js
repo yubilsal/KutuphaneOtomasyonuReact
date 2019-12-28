@@ -45,12 +45,12 @@ class ApiService {
       return axios.post(USER_API_BASE_URL + '/kullanici/' , kullanici);
     }     
 
-    orderBook(kitapId, KullaniciID, test) {
+    orderBook(kitapId, KullaniciID, date) {
         return axios({
           method: 'post',
           url   :  USER_API_BASE_URL + '/kitap/' + kitapId + '/kullanici/' + KullaniciID,
           headers : {},
-          data : {alınmaTarihi : test}
+          data : {tarih : date}
         });
         //return axios.post(USER_API_BASE_URL + '/kitap/' + kitapId + '/kullanici/' + KullaniciID, test);
     }

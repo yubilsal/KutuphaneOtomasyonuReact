@@ -48,7 +48,7 @@ class KullaniciDüzenle extends Component {
     render() {
         return (
             <div>
-                <h2 className="text-center">Edit Kullanici</h2>
+                <h2 className="text-center">Kullanıcı Düzenle</h2>
                 <form>
 
                 <div className="form-group">

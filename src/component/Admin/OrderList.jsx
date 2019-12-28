@@ -85,7 +85,7 @@ class ListUserComponent extends Component {
                                       <td bgcolor = {this.isExpired(orderlist.tarih)}>{orderlist.tarih}</td>
 
                                       <td>
-                                          <button className="btn btn-danger" onClick={() => this.deleteOrder(orderlist.id)}>     Sil   </button> 
+                                          <button className="btn btn-danger" onClick={() => this.deleteOrder(orderlist.id)}> Sil</button> 
                                       </td>
                                       
                                   </tr>

@@ -61,7 +61,7 @@ class EditUserComponent extends Component {
     render() {
         return (
             <div>
-                <h2 className="text-center">Edit User</h2>
+                <h2 className="text-center">Kitap Düzenle</h2>
                 <form>
 
                 <div className="form-group">

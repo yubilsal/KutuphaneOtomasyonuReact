@@ -46,10 +46,10 @@ class ListUserComponent extends Component {
                           <th>OrderId</th>
                           <th>İsim</th>
                           <th>Soyisim</th>
-                          <th>KitapAdi</th>
-                          <th>yazarAdi</th>
+                          <th>Kitap Adı</th>
+                          <th>Yazar Adı</th>
                           <th>ISBN</th>
-                          <th>Tarih</th>
+                          <th>Bitiş Tarihi</th>
 
                       </tr>
                   </thead>
@@ -65,10 +65,10 @@ class ListUserComponent extends Component {
                                       <td>{orderlist.kitapEntity.kitapAdi}</td>
                                       <td>{orderlist.kitapEntity.yazarAdi}</td>
                                       <td>{orderlist.kitapEntity.isbn}</td>
-                                      <td>{orderlist.alınmaTarihi}</td>
+                                      <td>{orderlist.tarih}</td>
 
                                       <td>
-                                          <button className="btn btn-success" onClick={() => this.deleteOrder(orderlist.id)}>     Sil   </button> 
+                                          <button className="btn btn-danger" onClick={() => this.deleteOrder(orderlist.id)}>     Sil   </button> 
                                       </td>
                                   </tr>
                           )

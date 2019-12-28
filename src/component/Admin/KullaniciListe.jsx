@@ -52,7 +52,7 @@ class ListUserComponent extends Component {
                 <h2 className="text-center">Kullanıcılar</h2>
                 <button className="btn btn-danger" style={{width:'250px', height:'30px'}} onClick={() => this.addKullanici()}> Kullanici Ekle </button>
                 <br />
-
+                <br />
                 <table className="table table-striped">
                     <thead>
                         <tr>

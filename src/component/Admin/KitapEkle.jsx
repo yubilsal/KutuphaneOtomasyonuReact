@@ -40,18 +40,18 @@ class AddUserComponent extends Component{
                 <h2 className="text-center">Kitap Ekle</h2>
                 <form>
                 <div className="form-group">
-                    <label>kitapAdi</label>
-                    <input type="text" placeholder="kitapAdi" name="kitapAdi" className="form-control" value={this.state.kitapAdi} onChange={this.onChange}/>
+                    <label>Kitap Adı</label>
+                    <input type="text" placeholder="Kitap adını giriniz" name="kitapAdi" className="form-control" value={this.state.kitapAdi} onChange={this.onChange}/>
                 </div>
 
                 <div className="form-group">
-                    <label>yazarAdi:</label>
-                    <input type="text" placeholder="yazarAdi" name="yazarAdi" className="form-control" value={this.state.yazarAdi} onChange={this.onChange}/>
+                    <label>Yazar Adı</label>
+                    <input type="text" placeholder="Yazar adını giriniz" name="yazarAdi" className="form-control" value={this.state.yazarAdi} onChange={this.onChange}/>
                 </div>
 
                 <div className="form-group">
-                    <label>isbn:</label>
-                    <input type="text" placeholder="isbn" name="isbn" className="form-control" value={this.state.isbn} onChange={this.onChange}/>
+                    <label>ISBN</label>
+                    <input type="text" placeholder="ISBN giriniz" name="isbn" className="form-control" value={this.state.isbn} onChange={this.onChange}/>
                 </div>
                 <Button color="success" disabled = {!isEnabled} className="btn btn-success" onClick={this.saveUser}>Save</Button>
             </form>

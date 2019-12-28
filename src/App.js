@@ -11,6 +11,7 @@ import Example from "./component/navbar/Example";
 import OrderBook from './component/Admin/OrderBook';
 import OrderList from './component/Admin/OrderList';
 import HomePage from './component/Admin/HomePage';
+import HomePage1 from './HomePage1';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Router>
               <div className="col-md-100">
                   <Switch>
-                      <Route path="/" exact component={HomePage} />
+                      <Route path="/" exact component={HomePage1} />
                       <Route path="/users" component={KitapListe} />
                       <Route path="/add-user" component={KitapEkle} />
                       <Route path="/edit-user" component={KitapDüzenle} />
